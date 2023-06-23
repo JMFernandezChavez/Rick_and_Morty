@@ -6,7 +6,7 @@ import characters from './data.js';
 function App() {
    return (
       <div className='App'>
-         <SearchBar onSearch={onSearch} />
+         <SearchBar onSearch={(characterID) => window.alert(characterID)} />
          <Cards characters={characters} />
       </div>
    );
