@@ -13,7 +13,7 @@ function Card({id, name, species, gender, image, onClose, addFav, removeFav, myF
       }
       else{
          setIsFav(true);
-         addFav({id, name, species, gender, image});
+         addFav({id, name, species, gender, image, onClose});
       }
    }
    useEffect(() => {
