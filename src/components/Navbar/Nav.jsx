@@ -1,10 +1,11 @@
 import SearchBar from "../SearchBar/SearchBar"
 import { Link } from "react-router-dom"
 
-const Nav = ({onSearch, setAccess}) =>{
+const Nav = ({ onSearch, setAccess }) => {
     const handleLogOut = () => {
         setAccess(false);
     }
+
     return(
         <nav>
         <div>

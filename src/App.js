@@ -19,8 +19,8 @@ function App() {
 
    const login = (userData) => {
       if(userData.username === username && userData.password === password){
-      setAccess(true)
-      navigate("/home");
+      setAccess(true);
+      navigate('/home');
       }
    }
    useEffect(() => {
@@ -45,7 +45,7 @@ function App() {
    }
    return (
       <div className='App'>
-         {location.pathname === '/' ? <Form login={login}/> : <Nav onSearch={onSearch}/>}
+         {location.pathname === '/' ? <Form login={login}/> : <Nav onSearch={onSearch} setAccess={setAccess}/>}
        <Routes>
          <Route path='/home' element={<Cards onClose={onClose} characters={characters} />}/>
          <Route path='/about' element={<About/>}/>
